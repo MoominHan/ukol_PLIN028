@@ -1,0 +1,332 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-background: #C5BBB1;
+  --color-background-2: #FFFFFF;
+  --color-writing: #886E58;
+  --color-writing-2: #FFFFFF;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: var(--color-writing);
+}
+/*__________________________________________________________*/
+
+
+body {
+  font-family: 'serif', 'garamond';
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  display:grid;
+}
+
+/*navbar*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-background-2);
+  padding: 10px 0;
+  z-index: 2;
+  border-bottom: 1px solid var(--color-writing);
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  letter-spacing: 10px;
+}
+
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-writing);
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/*main content new cats*/
+.adopted {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 100px 20px 20px;
+  text-align: center;
+}
+
+.adopted h2 {
+  grid-column: 1 / -1;
+  padding-top: 18px;
+  color: var(--color-writing-2);
+}
+
+.adopted .cat a{
+  text-decoration: none;
+}
+
+.adopted .cat a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  color: var(--color-background-2);
+}
+
+.adopted .cat {
+  background: var(--color-background-2);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.adopted .cat img {
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.adopted .cat h3 {
+  color: var(--color-writing);
+}
+
+/*main content adopted cats*/
+.newbies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--color-background-2);
+}
+
+.newbies h2 {
+  grid-column: 1 / -1;
+  color: var(--color-writing-2);
+}
+
+.newbies .cat {
+  background: var(--color-background-2);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.newbies .cat a {
+  text-decoration: none;
+}
+
+.newbies .cat a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  color: var(--color-background-2);
+}
+
+.newbies .cat img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.newbies .cat h3 {
+  color: var(--color-writing);
+}
+
+/*contact*/
+
+.contact-form h2 {
+  color: var(--color-writing-2);
+  text-align: center;
+}
+
+.contact-form {
+  background-color: var(--color-background);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid var(--color-writing);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-writing-2);
+  font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-writing);
+}
+
+.contact-form button {
+  background-color: var(--color-writing);
+  color: var(--color-writing-2);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-writing);
+  opacity: 0.7;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid var(--color-background-2);
+  padding: 10px;
+}
+
+.socials {
+  padding-inline-start: 0px;
+}
+
+.socials a i {
+  color: var(--color-writing);
+}
+
+.socials li {
+  display: inline-block;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.donation {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  align-items: center; 
+  text-align: center;
+  border-top: 1px solid var(--color-background-2);
+  padding: 20px;
+}
+
+.donation h2 {
+  grid-column: 1 / -1;
+  color: var(--color-writing-2);
+  margin: 0;
+}
+
+.donation p {
+  grid-column: 1 / -1;
+  color: var(--color-writing-2);
+  margin: 0;
+}
+
+.donation .img-donation {
+  grid-column: 2 / 3;
+}
+
+.donation img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: var(--color-background-2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+/*responsive*/
+@media only screen and (min-width: 600px) {
+  nav ul {
+    margin: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    margin: 0 60px;
+  }
+
+
+  .contact-form {
+    padding: 60px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  nav ul {
+    margin: 0 100px;
+  }
+
+  .adopted {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .newbies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-form {
+    padding: 80px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  nav ul {
+    margin: 0 180px;
+  }
+
+  .contact-form {
+    padding: 160px;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="title">purrvana</h1>
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#newbies">adoption</a></li>
+        <li><a href="#donation">donation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="adopted">
+    <h2>adopted</h2>
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-4.jpg" alt="cat-4">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-5.jpg" alt="cat-5">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-6.jpg" alt="cat-6">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="newbies" id="newbies">
+    <h2>adopt now!</h2>
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-1.jpg" alt="cat-1">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-2.jpg" alt="cat-2">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+
+    <div class="cat">
+      <a href="#">
+        <img src="images/cat-3.jpg" alt="cat-3">
+        <h3>name of the cat</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>contact us for the chosen one</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">name:</label>
+        <input type="text" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">email:</label>
+        <input type="email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="message">message:</label>
+        <textarea name="message" rows="4" required></textarea>
+      </div>
+  
+      <button type="button" onclick="contactPopup()">send</button>
+    </form>
+  </section>
+
+  <section class="donation" id="donation">
+    <div>
+      <h2>donate now</h2>
+      <p class="account-number">account number: 1234-5678-9012-3456</p>
+    </div>
+    <div class="img-donation">
+      <img src="images/donate.jpg" alt="donate">
+    </div>
+  </section>
+
+  <footer>
+    <ul class="socials">
+      <li> <a href="#"><i class='bx bxl-facebook'></i></a></li>
+      <li> <a href="#"><i class='bx bxl-linkedin'></i></a></li>
+      <li> <a href="#"><i class='bx bxl-twitter'></i></a></li>
+      <li> <a href="#"><i class='bx bxl-instagram'></i></a></li>
+      <li> <a href="#"><i class='bx bxl-pinterest'></i></a></li>
+    </ul> 
+  </footer>
+
+</body>
+</html>
